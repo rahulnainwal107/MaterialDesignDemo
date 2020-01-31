@@ -19,6 +19,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* MaterialDesignDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MaterialDesignDemoTests.m */; };
 		548F478684321DE7B9CA66F4 /* libPods-MaterialDesignDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DBE1ADD95A8C73E3C33023 /* libPods-MaterialDesignDemo.a */; };
+		AD29006423E44D3D00B5C01F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD29005823E44D3D00B5C01F /* Roboto-Black.ttf */; };
 		D4FDC079884115F41BACDFEC /* libPods-MaterialDesignDemo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 248B9F7E05544B113AA26756 /* libPods-MaterialDesignDemo-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		3506AA09F7328872F7EB72A5 /* Pods-MaterialDesignDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialDesignDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-MaterialDesignDemoTests/Pods-MaterialDesignDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CDEDE3AD9136F8EACD26F04 /* Pods-MaterialDesignDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialDesignDemo.release.xcconfig"; path = "Target Support Files/Pods-MaterialDesignDemo/Pods-MaterialDesignDemo.release.xcconfig"; sourceTree = "<group>"; };
 		77B3AC5A5FA86A8E06DB225E /* Pods-MaterialDesignDemo-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialDesignDemo-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-MaterialDesignDemo-tvOSTests/Pods-MaterialDesignDemo-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD29005823E44D3D00B5C01F /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		C171FF5312F68F37555DBF7F /* Pods-MaterialDesignDemo-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialDesignDemo-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MaterialDesignDemo-tvOSTests/Pods-MaterialDesignDemo-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C34129F1CA58DA79DF6B6BB1 /* libPods-MaterialDesignDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MaterialDesignDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A409BBA97085D8D5AFAB33 /* Pods-MaterialDesignDemo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialDesignDemo-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-MaterialDesignDemo-tvOS/Pods-MaterialDesignDemo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				AD29004C23E44D3C00B5C01F /* fonts */,
 				13B07FAE1A68108700A75B9A /* MaterialDesignDemo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MaterialDesignDemoTests */,
@@ -195,6 +198,15 @@
 				F08A2DDEB4E19FE111B79B7F /* Pods-MaterialDesignDemoTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD29004C23E44D3C00B5C01F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AD29005823E44D3D00B5C01F /* Roboto-Black.ttf */,
+			);
+			name = fonts;
+			path = ../assets/fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +351,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				AD29006423E44D3D00B5C01F /* Roboto-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +385,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		04D35C6EF754A5A227649C4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
